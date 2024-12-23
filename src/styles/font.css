@@ -2,7 +2,7 @@
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 500;
-  src: url("./quicksand-medium.ttf") format("truetype");
+  src: url("/fonts/quicksand-medium.ttf") format("truetype");
 }
 
 @font-face {
@@ -10,5 +10,5 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(./quicksand-bold.ttf) format('truetype');
+  src: url(/fonts/quicksand-bold.ttf) format('truetype');
 }

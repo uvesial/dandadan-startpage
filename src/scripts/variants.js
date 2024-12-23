@@ -85,7 +85,7 @@ function getRandomVariant() {
 export function updateVariant(variant) {
   const current = variants[variant ?? getRandomVariant()]
   const img = document.getElementById("character")
-  img.src = `./assets/${current.img}`
+  img.src = `./images/${current.img}`
 
   const root = document.documentElement
   root.style.setProperty("--primary", current.primary)
