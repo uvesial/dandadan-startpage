@@ -13,7 +13,7 @@ body {
 }
 
 body>main {
-  margin: 0 10rem;
+  margin: 1.5rem;
   padding: 1rem 2rem 1rem 1rem;
   backdrop-filter: blur(4px);
 
@@ -163,6 +163,7 @@ svg {
 @media screen and (max-width: 1024px) {
   body>main {
     width: 24rem;
+    padding: 1rem;
     grid-template-areas:
       "title"
       "char-img"
@@ -170,3 +171,25 @@ svg {
       "nav";
   }
 }
+
+@media screen and (max-width: 450px) {
+  body>main {
+    width: calc(100vw - 3rem);
+    >img {
+      width: calc(100% - 1rem);
+    }
+    a, a::before, a::after {
+      max-width: calc(50vw - 3rem);
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  body>main>nav {
+    grid-template-columns: 1fr;
+    a, a::before, a::after {
+      max-width: calc(100vw - 4rem);
+    }
+  }
+}
+

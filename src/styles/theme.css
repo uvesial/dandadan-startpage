@@ -38,6 +38,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/**
+ * Elements
+ **/
+
 button {
   height: 2.5rem;
   min-width: 2.5rem;
