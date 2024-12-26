@@ -82,8 +82,47 @@ function getRandomVariant() {
   return list[randomIndex]
 }
 
+const pinAction = document.getElementById("pin-action")
+const pinStoreKey = "dandadan-spg/pinned"
+
+function getPinned() {
+  return localStorage.getItem(pinStoreKey)
+}
+
+function setPinned(variant) {
+  const label = pinAction.querySelector("&>span.visually-hidden")
+  const icon = pinAction.querySelector("&>svg")
+
+  if (!variant) {
+    localStorage.removeItem(pinStoreKey)
+    pinAction.ariaChecked = "false"
+    icon.style.fill = "transparent"
+    pinAction.title = label.innerText = "Pin variant"
+  } else {
+    localStorage.setItem(pinStoreKey, variant)
+    pinAction.ariaChecked = "true"
+    icon.style.fill = "currentColor"
+    pinAction.title = label.innerText = "Unpin variant"
+  }
+}
+
+if (getPinned()) {
+  setPinned(getPinned())
+}
+
 export function updateVariant(variant) {
-  const current = variants[variant ?? getRandomVariant()]
+  const variantId = variant ?? getPinned() ?? getRandomVariant()
+
+  pinAction.addEventListener("click", ({ target }) => {
+    if (target.ariaChecked === "true") {
+      setPinned(null)
+    } else {
+      setPinned(variantId)
+    }
+  })
+
+  const current = variants[variantId]
+
   const img = document.getElementById("character")
   img.src = `./images/${current.img}`
 
