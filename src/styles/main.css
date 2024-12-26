@@ -7,13 +7,13 @@
 }
 
 body {
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 body>main {
-  margin: 1.5rem;
   padding: 1rem 2rem 1rem 1rem;
   backdrop-filter: blur(4px);
 
@@ -160,7 +160,7 @@ svg {
   height: 1rem;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 56rem) {
   body>main {
     width: 24rem;
     padding: 1rem;
@@ -172,9 +172,8 @@ svg {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 28rem) {
   body>main {
-    width: calc(100vw - 3rem);
     >img {
       width: calc(100% - 1rem);
     }
@@ -184,11 +183,11 @@ svg {
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 21rem) {
   body>main>nav {
     grid-template-columns: 1fr;
     a, a::before, a::after {
-      max-width: calc(100vw - 4rem);
+      max-width: calc(100vw - 6rem);
     }
   }
 }
