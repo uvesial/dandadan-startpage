@@ -162,23 +162,31 @@ svg {
 
 @media screen and (max-width: 56rem) {
   body>main {
-    width: 24rem;
+    width: 100%;
+    max-width: 24rem;
     padding: 1rem;
     grid-template-areas:
       "title"
       "char-img"
       "search"
       "nav";
-  }
-}
 
-@media screen and (max-width: 28rem) {
-  body>main {
     >img {
       width: calc(100% - 1rem);
     }
-    a, a::before, a::after {
-      max-width: calc(50vw - 3rem);
+    nav {
+      width: 100%;
+      overflow: hidden;
+      align-items: stretch;
+      justify-items: stretch;
+      justify-content: stretch;
+      ul, li, a {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      a, a::before, a::after {
+        max-width: 100%;
+      }
     }
   }
 }
@@ -186,9 +194,6 @@ svg {
 @media screen and (max-width: 21rem) {
   body>main>nav {
     grid-template-columns: 1fr;
-    a, a::before, a::after {
-      max-width: calc(100vw - 6rem);
-    }
   }
 }
 
