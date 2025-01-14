@@ -1,8 +1,16 @@
 const variants = {
+  /*
   "aira-1": {
     img: "aira-1.webp",
     primary: "hsl(41, 93%, 73%)",
     secondary: "hsl(324, 49%, 80%)",
+    shade: "hsl(41, 39%, 26%, 39%)",
+  },
+  */
+  "aira-1": {
+    img: "roblox1.webp",
+    primary: "hsl(41, 93%, 73%)",
+    secondary: "hsl(225, 50%, 65%)",
     shade: "hsl(41, 39%, 26%, 39%)",
   },
   "aira-2": {
@@ -11,16 +19,32 @@ const variants = {
     secondary: "hsl(214, 100%, 75%)",
     shade: "hsl(360, 43%, 24%, 39%)",
   },
+  /*
   "granny-1": {
     img: "granny-1.webp",
     primary: "hsl(176, 93%, 58%)",
     secondary: "hsl(270, 36%, 70%)",
     shade: "hsl(177, 72%, 20%, 39%)",
   },
+  */
+  "granny-1": {
+    img: "kiryu.webp",
+    primary: "hsl(176, 93%, 58%)",
+    secondary: "hsl(0, 50%, 45%)",
+    shade: "hsl(177, 72%, 20%, 39%)",
+  },
+  /*
   "granny-2": {
     img: "granny-2.webp",
     primary: "hsl(176, 93%, 58%)",
     secondary: "hsl(6, 93%, 70%)",
+    shade: "hsl(177, 72%, 20%, 39%)",
+  },
+  */
+  "granny-2": {
+    img: "ichiban.webp",
+    primary: "hsl(176, 93%, 58%)",
+    secondary: "hsl(0, 50%, 45%)",
     shade: "hsl(177, 72%, 20%, 39%)",
   },
   "jiji-1": {
