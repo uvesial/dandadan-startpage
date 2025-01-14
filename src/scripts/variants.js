@@ -30,7 +30,7 @@ const variants = {
   "granny-1": {
     img: "kiryu.webp",
     primary: "hsl(176, 93%, 58%)",
-    secondary: "hsl(0, 25%, 45%)",
+    secondary: "hsl(0, 65%, 65%)",
     shade: "hsl(177, 72%, 20%, 39%)",
   },
   /*
@@ -44,7 +44,7 @@ const variants = {
   "granny-2": {
     img: "ichiban.webp",
     primary: "hsl(176, 93%, 58%)",
-    secondary: "hsl(0, 25%, 45%)",
+    secondary: "hsl(0, 65%, 65%)",
     shade: "hsl(177, 72%, 20%, 39%)",
   },
   "jiji-1": {
